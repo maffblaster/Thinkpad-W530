@@ -1,0 +1,664 @@
+                                                                   Revision : 01
+--------------------------------------------------------------------------------
+Software name      BIOS Update CD
+                   (ISO image file for bootable CD)
+
+Support model      ThinkPad W530
+
+Operating Systems  Microsoft Windows 8.1  32-bit, 64-bit
+                   Microsoft Windows 8  32-bit, 64-bit
+                   Microsoft Windows 7  32-bit, 64-bit
+                   Microsoft Windows XP  Professional SP3
+
+                   Refer to marketing materials to find out what computer models
+                   support which Operating Systems.
+
+Version            2.56
+
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package provides the ISO image file of UEFI BIOS which is compatible with
+  CD/DVD/BD writing software to create the CD/DVD/BD for the UEFI BIOS update.
+  Hereafter the CD/DVD/BD for the UEFI BIOS update is called as "BIOS Update CD".
+
+  The BIOS Update CD can boot the computer disregarding the operating systems
+  and update the UEFI BIOS (including system program and Embedded Controller
+  program) stored in the ThinkPad computer to fix problems, add new functions,
+  or expand functions as noted below.
+
+  For that purpose, it is necessary to have the CD/DVD/BD writing software (with
+  CD/DVD/BD creation function from the ISO image file) prepared separately.
+
+  Also, any one of the following types of CD-RW, CD-RW & DVD Combo, DVD, DVD
+  Multi, BD or other optical drives should be prepared. (Hereafter these drives
+  are called as "optical drive".)
+  - ThinkPad internal
+  - USB
+
+  This program is language independent and can be used with any language system.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+  Version 2.56
+
+[Important updates]
+  Nothing.
+
+[New functions or enhancements]
+  Nothing.
+
+[Problem fixes]
+- Fixed an issue that might fail to boot the computer remotely.
+
+
+--------------------------------------------------------------------------------
+KNOWN LIMITATIONS
+
+- After backing up a Windows XP system to a hard drive connected to the e-SATA
+  port through Rescue and Recovery, when attempting to restore the backup image
+  from the e-SATA hard drive through Rescue and Recovery, a blue screen error
+  occurs. Rescue and Recovery can not access the e-SATA hard drive.
+
+
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+  There are two ways to check the UEFI BIOS version and BIOS ID.
+
+
+ [Checking on Windows]
+
+  Windows 8.1/8:
+
+  1. Hold down the Windows logo key and press X to open a menu at the lower-left
+     area of the screen.
+
+  2. Select Control Panel from the menu.
+  3. Make sure "View by Category" is selected, and select System and Security,
+     select Administrative Tools, and then select System Information.
+     - or -
+  2. Select Run from the menu.
+  3. Type msinfo32, and press Enter.
+
+  4. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  5. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.
+
+  Windows 7:
+
+  1. Click Start, click All Programs or Programs, click Accessories, click
+     System Tools and then click System Information.
+     - or -
+     Click Start, type msinfo32 in the Start Search box and then click msinfo32
+     in the Programs list.
+  2. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  3. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.
+
+  Windows XP:
+
+  1. Click Start, click All programs, click Accessories, click System Tools and
+     then click System Information.
+     - or -
+     Click Start, click Run, type msinfo32 in the Open box and then click OK.
+  2. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  3. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+
+ [Checking on ThinkPad Setup]
+
+  Windows 8.1/8:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+
+  Windows 7/XP:
+  1. Turn off the computer.
+  2. Turn on the computer.
+  3. Go to the step 5.
+
+  5. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Locate the UEFI BIOS Version line and Embedded Controller Version line.
+     "UEFI BIOS version (BIOS ID)" will be shown on the UEFI BIOS Version line.
+  7. Turn off the computer.
+
+
+--------------------------------------------------------------------------------
+NOTES
+
+- If the UEFI BIOS has been updated to version 2.55 or higher, it is no longer
+  able to roll back to the version before 2.55 for degrading security function.
+
+- If the UEFI BIOS has been updated to version 2.50 or higher, it is no longer
+  able to roll back to the version before 2.50 because the new 10-digit part
+  number and serial number format was once installed. The old UEFI BIOS with the
+  7-digit part number and serial number format can not handle the 10-digit
+  format.
+
+- Be aware that the OS Optimized Defaults option in the Restart menu of ThinkPad
+  Setup should not be normally changed. Lenovo recommends to use the factory
+  default setting for it, as follows.
+
+                                                       OS Optimized Defaults
+  - For Windows 8.1/8 64-bit Preload models                      [Enabled]
+  - For Windows 8.1/8 32-bit or Windows 7 Preload models         [Disabled]
+
+  To install the retail edition of Windows 8.1/8 64-bit, the OS Optimized
+  Defaults option should be [Enabled].
+
+  If the OS Optimized Defaults setting is changed, Setup Default by the F9 key
+  will not load the same default configuration, as follows. Furthermore, by the
+  condition of Operating System installation, the computer may not be booted due
+  to the setting change.
+
+  If your computer runs satisfactorily now, you have no need to change the OS
+  Optimized Defaults option. If you need to change the setting, consider well
+  the effect of the setting change.
+
+  Affected Setup menu items :
+  "OS Optimized Defaults" setting          [Disabled] case      [Enabled] case
+  - Security
+    - UEFI BIOS Update Option
+      - Secure RollBack Prevention         [Disabled]           [Enabled]
+    - Secure Boot
+      - Secure Boot                        [Disabled]           [Enabled]
+  - Startup
+    - UEFI/Legacy Boot                     [Both]               [UEFI Only]
+    - UEFI/Legacy Boot Priority            [Legacy First]       (Not shown)
+    - CSM Support                          [Yes]                [No]
+
+  By the OS to be newly installed, you need to change the OS Optimized Defaults
+  option, and load default configuration.
+
+  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad
+     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.
+  2. Select Restart, then select OS Optimized Defaults and press Enter.
+  3. Select the following setting and press Enter.
+       [Enabled]   (for Windows 8.1/8 64-bit)
+       [Disabled]  (for Windows 8.1/8 32-bit, Windows 7 or Windows XP)
+  4. Press the F9 key to load default configuration.
+  5. Select Yes.
+  6. Press the F10 key to save default configuration and exit.
+  7. Select Yes.
+     The computer will be restarted automatically.
+
+- Lenovo recommends to install the USB 3.0 driver for Windows (Version 1.0.4.225
+  or higher) prior to updating the UEFI BIOS. Because the UEFI BIOS requires the
+  modification in the USB 3.0 driver to fix USB 3.0 related issues.
+
+- To enable 30 Day standby feature of ThinkVantage Power Manager, the computer
+  has to disable waking computer by network adapters and USB devices. Uncheck
+  the checkbox next to "Allow this device to wake the computer" in the Power
+  Management tab for each device in Device Manager.
+
+- You should install the CD/DVD/BD writing software which supports CD/DVD/BD
+  creation function from the ISO image file to create the BIOS Update CD.
+
+- To boot the computer from the BIOS Update CD, you should have any one of the
+  following types of optical drives.
+  - ThinkPad internal
+  - USB
+  Any types of other optical device like ExpressCard device are not supported.
+
+- The contents of the BIOS Update CD can not be shown by Windows Explorer.
+
+
+--------------------------------------------------------------------------------
+CREATING THE BIOS UPDATE CD
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Downloading file
+  1. Click once on the underlined file name. Once this is done, some pop-up
+     windows will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, click Save.
+  4. Choose the folder you would like to download the file to and click Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+
+  Creating BIOS Update CD
+  5. Prepare a computer with an optical drive installed and a blank CD/DVD/BD
+     disc, and make sure the CD/DVD/BD writing software is installed into the
+     computer.
+  6. Locate the folder where the file was downloaded.
+  7. Locate the file ending in ".ISO" that was downloaded, then double-click it.
+     A writing software will open.
+  8. Follow the instructions on the screen to finish writing and complete
+     creating BIOS Update CD.
+
+  Finally delete the file saved in the step 4.
+
+
+--------------------------------------------------------------------------------
+UPDATING THE UEFI BIOS
+
+Notes:
+- If the UEFI BIOS has been updated to version 2.55 or higher, it is no longer
+  able to roll back to the version before 2.55 for degrading security function.
+- If the UEFI BIOS has been updated to version 2.50 or higher, it is no longer
+  able to roll back to the version before 2.50 because the new 10-digit part
+  number and serial number format was once installed. The old UEFI BIOS with the
+  7-digit part number and serial number format can not handle the 10-digit
+  format.
+- If your computer runs satisfactorily now, it may not be necessary to update
+  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the
+  Version Information section.
+- You need an AC adapter, a charged battery pack and any one of the following
+  types of optical drives.
+  - ThinkPad internal
+  - USB
+- Remove the Power-on password prior to updating the UEFI BIOS in the remote
+  deployment environments.
+
+
+Attention:
+  Do not turn off, suspend the computer or remove the BIOS UPDATE CD until
+  the update has been completed. IF YOU DO THAT WHILE THE UPDATE IS STILL
+  IN PROGRESS, THE SYSTEM BOARD MAY HAVE TO BE REPLACED.
+
+
+  1. Firmly connect the AC adapter to your ThinkPad computer.
+  2. Make sure it has an optical drive installed.
+
+ Windows 8.1/8:
+  3. Turn on the computer to start Windows.
+  4. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  5. Select Settings, then Power from the menu.
+  6. Select Reboot to restart the computer.
+
+ Windows 7/XP:
+  3. Turn off the computer.
+  4. Turn on the computer.
+  5. Go to the step 7.
+
+  7. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center of the screen, press the F12 key.
+     Boot Menu will be displayed. If a password prompt appears, type the correct
+     password.
+  8. Insert the BIOS Update CD into the optical drive.
+  9. Select ATAPI CD0 or USB CD to set up the boot drive.
+       ATAPI CD0:  when using the ThinkPad internal optical drive
+       USB CD:  when using a USB optical drive
+     Then, the computer will be rebooted from the BIOS Update CD.
+ 10. Select Read this first from the menu and carefully read the information.
+ 11. Press the Esc key to return to the menu.
+ 12. Select Update system program and follow the instructions on the screen.
+ 13. After the information panel appears, remove the BIOS Update CD from the
+     optical drive then press the Enter key to restart the computer.
+
+
+  Note:
+  If it is the first time to apply the UEFI BIOS Version 2.03 (G5ET61WW) or
+  higher, you should do the following procedure. This is needed only once.
+
+ Windows 8.1/8:
+ 14. Turn on the computer to start Windows.
+ 15. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+ 16. Select Settings, then Power from the menu.
+ 17. Select Reboot to restart the computer.
+
+ Windows 7/XP:
+ 14. Power off the computer.
+ 15. Power on the computer.
+ 16. Go to the step 18.
+
+ 18. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+ 19. Choose "Security" then "Secure Boot" to show the menu.
+ 20. Select "Restore Factory Keys" and press Enter.
+ 21. Select "Yes" to restore Factory keys.
+ 22. Press F10 key and select "Yes" to save and exit from Setup menu. Then the
+     computer is restarted.
+
+
+--------------------------------------------------------------------------------
+INITIALIZING UEFI BIOS
+
+  UEFI BIOS Initialization is suggested for some problems. To initialize the
+  UEFI BIOS settings:
+
+ Windows 8.1/8:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+
+ Windows 7/XP:
+  1. Power off the computer.
+  2. Power on the computer.
+  3. Go to the step 5.
+
+  5. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Press the F9 key to load default configuration.
+  7. Select Yes.
+  8. Press the F10 key to save default configuration and exit.
+  9. Select Yes.
+ 10. Restart the computer.
+
+  Note:
+  After initialization you may need to reapply some settings that you had
+  changed previously.
+
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions of UEFI BIOS and ECP (Embedded Controller Program) have
+  been released to date.
+
+  Package (ID)          UEFI BIOS (BIOS ID)  ECP (ECP ID)      Rev.  Issue Date
+  --------------------  -------------------  ---------------   ----  -----------
+  2.56      (G5UJ19UC)  2.56 (G5ET96WW)      1.12 (G4HT38WW)   01    2013/12/17
+  2.55-1.12 (G5UJ18UC)  2.55 (G5ET95WW)      1.12 (G4HT38WW)   01    2013/11/12
+  2.55      (G5UJ17UC)  2.55 (G5ET95WW)      1.11 (G4HT37WW)   03    2013/11/01
+  2.55      (G5UJ17UC)  2.55 (G5ET95WW)      1.11 (G4HT37WW)   02    2013/10/23
+  2.55      (G5UJ17UC)  2.55 (G5ET95WW)      1.11 (G4HT37WW)   01    2013/10/02
+  2.54      (G5UJ16UC)  2.54 (G5ET94WW)      1.11 (G4HT37WW)   01    2013/08/23
+  2.53      (G5UJ15UC)  2.53 (G5ET93WW)      1.11 (G4HT37WW)   01    2013/06/05
+  2.52-1.10 (G5UJ14UC)  2.52 (G5ET92WW)      1.10 (G4HT36WW)   01    2013/04/16
+  2.52      (G5UJ13UC)  2.52 (G5ET92WW)      1.09 (G4HT35WW)   01    2013/03/19
+  2.51      (G5UJ12UC)  2.51 (G5ET91WW)      1.09 (G4HT35WW)   01    2013/01/25
+  2.50      (G5UJ11UC)  2.50 (G5ET90WW)      1.08 (G4HT34WW)   01    2013/01/09
+  2.07      (G5UJ10UC)  2.07 (G5ET65WW)      1.07 (G4HT33WW)   02    2012/12/07
+  2.07      (G5UJ10UC)  2.07 (G5ET65WW)      1.07 (G4HT33WW)   01    2012/11/27
+  2.06      (G5UJ09UC)  2.06 (G5ET64WW)      1.07 (G4HT33WW)   02    2012/11/20
+  2.06      (G5UJ09UC)  2.06 (G5ET64WW)      1.07 (G4HT33WW)   01    2012/11/01
+  2.03      (G5UJ08UC)  2.03 (G5ET61WW)      1.07 (G4HT33WW)   01    2012/09/21
+  1.11      (G5UJ07UC)  1.11 (G5ET33WW)      1.07 (G4HT33WW)   02    2012/08/31
+  1.11      (G5UJ07UC)  1.11 (G5ET33WW)      1.07 (G4HT33WW)   01    2012/08/28
+  1.08      (G5UJ05UC)  1.08 (G5ET30WW)      1.06 (G4HT32WW)   01    2012/06/14
+  1.07      (G5UJ04UC)  1.07 (G5ET29WW)      1.05 (G4HT31WW)   01    2012/05/29
+  1.06      (G5UJ03UC)  1.06 (G5ET28WW)      1.05 (G4HT31WW)   01    2012/05/29
+  1.05      (G5UJ02UC)  1.05 (G5ET27WW)      1.05 (G4HT31WW)   01    2012/05/11
+  1.04      (G5UJ01UC)  1.04 (G5ET26WW)      1.05 (G4HT31WW)   01    For preload
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of UEFI BIOS and Embedded Controller Program, refer to
+  the Determining which version is installed section.
+
+
+Summary of Changes
+
+  Where: <   >        Package version
+         UEFI:        UEFI BIOS version
+         ECP:         Embedded Controller Program version
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+<2.56>
+ UEFI: 2.56 / ECP: 1.12
+- (Fix) Fixed an issue that might fail to boot the computer remotely.
+
+<2.55-1.12>
+ UEFI: 2.55 / ECP: 1.12
+- (Fix) Fixed an issue where the mouse pointer might be moved when the lid was
+        closed.
+
+<2.55>
+ UEFI: 2.55 / ECP: 1.11
+-[Important]
+        Added support for Microsoft Windows 8.1 32-bit,64-bit.
+
+<2.55>
+ UEFI: 2.55 / ECP: 1.11
+- (New) Added the following note for the NOTES section.
+        - If the UEFI BIOS has been updated to version 2.55 or higher, it is no
+          longer able to roll back to the version before 2.55 for degrading
+          security function.
+
+<2.55>
+ UEFI: 2.55 / ECP: 1.11
+- (New) Improved security features.
+        (Note)
+        If the UEFI BIOS has been updated to version 2.55 or higher, it is no
+        longer able to roll back to the version before 2.55 for degrading
+        security function.
+- (Fix) Fixed an issue that might fail to boot the computer from the USB device.
+- (Fix) Fixed an issue where the WMI interface has incorrect messages.
+- (Fix) Fixed an issue where the mouse pointer might be moved when the lid was
+        closed.
+- (Fix) Fixed an issue where the computer might not resume normal operation from
+        sleep state.
+
+<2.54>
+ UEFI: 2.54 / ECP: 1.11
+- (Fix) Fixed an issue that might not be able to remote boot the comuter from
+        the network.
+- (Fix) Corrected the help message about the I/O Port Access menu in ThinkPad
+        Setup.
+
+<2.53>
+ UEFI: 2.53 / ECP: 1.11
+- (New) Improved the fan noise when docked.
+- (Fix) Fixed an issue where the help message about the Restart menu in ThinkPad
+        Setup was inccorrect.
+- (Fix) Fixed an issue where the integrated Bluetooth device was not available
+        when "USB UEFI BIOS support" was disabled in ThinkPad Setup.
+- (Fix) Fixed an issue where some settings were not updated immediately after
+        loading default settings in ThinkPad Setup.
+- (Fix) Fixed an issue where some unexpected characters might be shown on the
+        left-top on screen when a diagnostic splash screen was displayed.
+- (Fix) Fixed an issue where the computer might not enter standby state of the
+        30day standby at the first boot just after executing Load Default
+        Settings in ThinkPad Setup.
+
+<2.52-1.10>
+ UEFI: 2.52 / ECP: 1.10
+- (New) Improved the fan noise.
+
+<2.52>
+ UEFI: 2.52 / ECP: 1.09
+- (Fix) Fixed an issue where the computer might hang when attaching/detaching
+        the USB device to/from the computer or Docking Station.
+- (Fix) Fixed an issue where no sound was heard from the ThinkPad internal
+        speakers while the computer was locked when SmartAudio was set to
+        Multi-stream mode and headphones or external speakers were attached to
+        the computer. This fix is to follow Windows' behavior.
+        (Hint)
+        To disable sound from the internal speakers in lock state, press the
+        mute button on the keyboard.
+- (Fix) Fixed an issue where Windows Memory Diagnostics might fail with two
+        memory modules installed.
+
+<2.51>
+ UEFI: 2.51 / ECP: 1.09
+- (Fix) Fixed an issue where Windows 7 activation might fail.
+- (Fix) Fixed an issue where the Optimus graphics might have a blue screen error
+        and hang when the AC adapter was unplugged.
+
+<2.50>
+ UEFI: 2.50 / ECP: 1.08
+- (New) Added support for new 10-digit part number and serial number format.
+        (Note)
+        To support the new format, rolling back to the version before 2.50 can
+        not be done.
+- (New) Improved fan noise.
+- (Fix) Fixed an issue that might have screen corruption on Linux.
+
+<2.07>
+ UEFI: 2.07 / ECP: 1.07
+- (Fix) Fixed an issue where the Discrete Graphics configuration could not be
+        captured/played back with ThinkPad Setup Settings Capture/Playback
+        Utility (SRSETUP).
+
+<2.07>
+ UEFI: 2.07 / ECP: 1.07
+- (Fix) Fixed an issue where the ThinkPad Setup screen was not shown correctly
+        when the UEFI/Legacy Boot option was set to UEFI Only and the CSM Mode
+        option was set to No in the menu.
+- (Fix) Fixed an issue where pressing the F11 key might fail to launch Recovery
+        Utility on Windows 8-based computer with the RAID configuration.
+
+<2.06>
+ UEFI: 2.06 / ECP: 1.07
+- (Fix) Fixed an issue that failed to start Windows with RAID configuration on
+        Windows 8.
+
+<2.06>
+ UEFI: 2.06 / ECP: 1.07
+- (New) Updated Intel reference code.
+- (Fix) Fixed an issue that failed to start Windows with RAID configuration.
+        Note: The fix is under verification for Windows 8.
+
+<2.03>
+ UEFI: 2.03 / ECP: 1.07
+- [Important] Added support for Microsoft Windows 8.
+- (New) Added support for required functions for Microsoft Windows 8.
+- (Fix) Fixed an issue where the WINUPTP command did not update the UEFI BIOS
+        and always rebooted the computer automatically.
+        (Note) Refer to the Note in the Unattended Update section.
+
+<1.11>
+ UEFI: 1.11 / ECP: 1.07
+- (Fix) Fixed an issue where the 1394 device had a yellow bang (!) in the Device
+        Manager with the BIOS version 1.08 on Windows XP.
+
+<1.11>
+ UEFI: 1.11 / ECP: 1.07
+- (New) Updated the Diagnostics module to version 1.05.00.
+- (New) Added support for some wireless LAN devices for a specific country.
+- (Fix) Fixed an issue where the memory I/O resource allocation might be wrong
+        when installing very large amount of memory.
+- (Fix) Fixed an issue where the computer might fail to resume normal operation
+        with using Intel Rapid Storage Technology when disabling the Intel
+        Hyper-Threading Technology option in the ThinkPad Setup menu.
+- (Fix) Fixed an issue that might list an unsupported lower screen resolution
+        for the external monitors in the Intel Graphic/Media Control Panel menu.
+- (Fix) Fixed an issue where the Boot Menu screen had gray background when it
+        was entered from Startup Interrupt Menu.
+- (Fix) Fixed an issue that might restart the computer automatically while
+        starting the Windows, if Windows had been installed as UEFI mode, when
+        the UEFI/Legacy Boot Mode option was set to Both in the ThinkPad Setup
+        menu.
+
+<1.08>
+ UEFI: 1.08 / ECP: 1.06
+- (Fix) Fixed an issue where the USB device on USB 3.0 might not be detected
+        after resuming normal operation from standby/sleep state.
+        Note:
+        The USB 3.0 driver for Windows version 1.0.4.225 or higher is required
+        for fix.
+- (Fix) Fixed an issue where the computer might be waked up immediately after
+        entering hibernation state when the USB 3.0 Hub was attached there.
+
+<1.07>
+ UEFI: 1.07 / ECP: 1.05
+- (Fix) Fixed an issue where the computer might not resume normal operation from
+        standby/sleep state when a Hard Disk Password was set in the SSD.
+
+<1.06>
+ UEFI: 1.06 / ECP: 1.05
+- (Fix) Fixed an issue that might require a BitLocker recovery key everytime
+        Windows restarted when the BitLocker Drive Encryption was enabled.
+- (Fix) Fixed an issue where an unexpected device was listed in the Device
+        Manager.
+
+<1.05>
+ UEFI: 1.05 / ECP: 1.05
+- (Fix) Fixed an issue where there was an unnecessary item in the ThinkPad Setup
+        menu.
+
+<1.04>
+ UEFI: 1.04 / ECP: 1.05
+- (New) Initial release for ThinkPad W530.
+
+
+--------------------------------------------------------------------------------
+UEFI BIOS INFORMATION
+
+Memory Map Information
+----------------------
+
+
+Reserved Area:
+The following conventional memory addresses are reserved by the UEFI BIOS and
+others.
+
+ Intel HD Graphics model and NVIDIA NVS 5400M installed model
+  C0000-CFFFF : Reserved for Video BIOS
+  D0000-D0FFF : Reserved for Option ROM of Ethernet (*a)
+  E0000-FFFFF : Reserved for System BIOS
+
+ NVIDIA NVS 5400M installed model (Discrete Graphics mode)
+  C0000-CE1FF : Reserved for Video BIOS
+  CE200-CF1FF : Reserved for Option ROM of Ethernet (*a)
+  E0000-FFFFF : Reserved for System BIOS
+
+  *a: This area will be released in case of Ethernet LAN Option ROM was NOT used
+      at system boot.
+
+
+Usable Area:
+The following memory address can be used by the memory manager such as EMM386.
+
+ Intel HD Graphics model and NVIDIA NVS 5400M installed model
+  D0000-DFFFF or D1000-DFFFF (*b)
+
+ NVIDIA NVS 5400M installed model (Discrete Graphics mode)
+  CE200-DFFFF or CF200-DFFFF (*b)
+
+  *b: Memory address will be changed to D1000-DFFFF when Ethernet LAN Option ROM
+      was used at system boot.
+
+  Note:
+  Certain addresses in this area will be reserved for optional devices by
+  Operating Systems. The addresses vary and depend on the design of each
+  Operating System.
+
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+  Nothing.
+
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo, Rescue and Recovery, ThinkPad and ThinkVantage are registered
+  trademarks of Lenovo.
+
+* The Bluetooth word mark and logos are owned by the Bluetooth SIG, Inc.
+* Broadcom is a registered trademark of Broadcom Corporation.
+* SmartAudio is a trademark of Broadcom Corporation.
+* ExpressCard is a trademark of PCMCIA (Personal Computer Memory Card
+  International Association).
+* Intel is a registered trademark of Intel Corporation.
+* Microsoft, BitLocker, Internet Explorer and Windows are registered trademarks
+  of Microsoft Corporation.
+* NVIDIA is a registered trademark of NVIDIA Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.
